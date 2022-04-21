@@ -1,8 +1,11 @@
-# lean4-cli
-## Usage
-See [the documentation of Lake](https://github.com/leanprover/lake).
+# Cli.lean
 
-Use one of the following for the `<tag>` in the dependency source `Source.git "https://github.com/mhuisi/lean4-cli.git" "<tag>"`:
+Command line interface tools for Lean.
+
+## Usage
+See [the documentation of Lake](https://github.com/leanprover/lake). There is also nix flake support.
+
+Use one of the following for the `<tag>` in the dependency source `Source.git "https://github.com/yatima-inc/Cli.lean.git" "<tag>"`:
 - `main` if you want to stay in sync with Lean 4 milestone releases. The `main` branch will contain a working version of lean4-cli for the most recent Lean 4 milestone.
 - `nightly` if you want to stay in sync with Lean 4 nightly releases. The `nightly` branch will contain a working version of lean4-cli for the most recent Lean 4 nightly build.
 - One of the specific release tags if you want to pin a specific version, e.g. `v1.0.0-lv4.0.0-m4` for v1.0.0 for the 4th Lean 4 milestone release or `v1.0.0-lnightly-2022-05-21` for v1.0.0 for the Lean 4 nightly version from 2022-05-21. Only nightlies where lean4-cli broke will receive a release tag.
@@ -351,3 +354,16 @@ def mk
   (extension?          : Option Extension := none)
   : Cmd
 ```
+
+## Develop
+
+Enable auto loading dependencies into the shell with `direnv allow` or manually with `nix develop`.
+
+## Building
+
+Build with `nix build .`
+
+## Tests
+
+Run tests with `nix run .#test`
+

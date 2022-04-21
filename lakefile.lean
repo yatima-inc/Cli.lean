@@ -4,7 +4,9 @@ open Lake DSL
 package Cli
 
 @[default_target]
-lean_lib Cli
+lean_lib Cli {
+  srcDir := "src"
+}
 
 require std from git
   "https://github.com/leanprover/std4/" @ "fde95b16907bf38ea3f310af406868fc6bcf48d1"
