@@ -7,7 +7,7 @@ package Cli
 lean_lib Cli
 
 require std from git
-  "https://github.com/leanprover/std4/" @ "2919713bde15d55e3ea3625a03546531283bcb54"
+  "https://github.com/leanprover/std4/" @ "fde95b16907bf38ea3f310af406868fc6bcf48d1"
 
 require YatimaStdLib from git
-  "https://github.com/yatima-inc/YatimaStdLib.lean" @ "515b7eff7765dcf55ce275ac41fa13a30a59f1d0"
+  "https://github.com/yatima-inc/YatimaStdLib.lean" @ "cf2da463e263951019cb96e74d5fa6e51636e553"
