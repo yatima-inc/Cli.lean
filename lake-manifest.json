@@ -2,7 +2,7 @@
  "packagesDir": "lake-packages",
  "packages":
  [{"git":
-   {"url": "https://github.com/yatima-inc/YatimaStdLib.lean",
+   {"url": "https://github.com/lurk-lab/YatimaStdLib.lean",
     "subDir?": null,
     "rev": "649368d593f292227ab39b9fd08f6a448770dca8",
     "name": "YatimaStdLib",
